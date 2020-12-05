@@ -1,0 +1,197 @@
+* {
+	box-sizing: border-box;
+}
+/* setting the width of the whole web page */
+body {
+	background: red url("../imagesmessi/barcelonabackground.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+	max-width:75%;
+	margin: auto;
+	font-family: Arial;
+}
+@media screen and (max-width:950px) {
+	body {
+		background-image: url("../imagesmessi/messi4.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+	}
+}
+
+/* setting a border for the actual content */
+.bodycontainer {
+	background-color: rgba(255,255,255, 0.3);
+	border: 1px solid black;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+/* header content displayed as flex */
+.headerz {
+	display: flex;
+	justify-content: center;
+}
+/* styling the h1 text */
+.messiheader h1 {
+	border-bottom: 1px solid black;
+	color: #DC143C;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* styling the picture */
+.messiheaderpicturecontainer img {
+	border: 1px solid black;
+	text-align: center;
+}
+/* styling the text below the picture */
+.descriptionpic p {
+	border: 1px solid black;
+	background-color: rgba(0,0,0, 0.4);
+	color: white;
+	font-size: 25px;
+	margin: auto;
+	padding: 25px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+}
+/* creating space between header and mainside content */
+.space {
+	margin: 5px;
+	border: 2px solid black;
+}
+/* setting display for the main and side content */
+.mainandsidecontent {
+	display:flex;
+	flex-wrap: wrap;
+}
+.maincontent {
+	flex: 70%;
+	background-color: rgba(168,19,62, 0.4);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	color: white;
+	padding: 0 25px;
+}
+.sidecontent {
+	background-color: rgba(0,77,152,0.6);
+	border-right: 1px solid black; /* this puts a border on the right of the side content */
+	border-top: 1px solid black; /* this puts a border on the top of the side content */
+	border-bottom: 1px solid black; /* this puts a border on the bottom of the side content */
+	flex: 25%;
+
+}
+.messifooter {
+	display: flex;
+	flex: 100%;
+	max-width: 100%;
+}
+/* editting the navbar list on the left */
+.sidecontent ul {
+	background-color: rgba(237,187,0, 0.7);
+	list-style: none;
+	padding: 0;						/* this sets the navbar ready */
+	margin: 0;
+	max-width: 100%;
+}
+.sidecontent li a{
+	border-bottom: 1px solid black;
+	color: black;
+	display: block;				/* required to make the whole area clickable */
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px 25px;
+	text-decoration: none;
+}
+/* if hover nav change color */
+.sidecontent li a:hover {
+	background-color: #EDBB00;
+}
+
+.sidecontent li a.active {
+	background-color: #EDBB00;
+	color: black;
+}
+/* removes bottom border for bug */
+.sidecontent li:last-child {
+	border-bottom: none;
+}
+/* decorating the quick facts side content */
+.quickfacts {
+	background-color: rgba(255,237,2, 0.6);
+	margin: 20px;
+	padding: 0 40px;
+	border: 1px solid black;
+	border-radius: 50px;
+	position: relative;
+	top: 15px;
+	text-align: center;
+}
+/* decorating the quick facts header2 */
+.quickfacts .h2sidetext {
+	color: #004D98;
+	font-weight: bolder;
+	font-size: 28px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* decorating the side content header5 text */
+.quickfacts .sidetext {
+	color: #A50044;
+	text-decoration: underline;
+}
+/* decorating simply the paragraph inside quickfacts */
+.quickfacts p {
+	font-style: italic;
+}
+/* gonna start styling the main content now */
+#AboutMessi, #AchievementsMessi {
+	border-bottom: 2px solid black;	/* Seperating sections by using border bottom */
+}
+/* styling all the headers 2 for the web page */
+#AboutMessi h2, #AchievementsMessi h2, #MessiIntCareer h2 {
+	color: black;
+	font-weight: bolder;
+	font-size: 35px;
+	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+	text-decoration: underline;
+}
+/* styling all the h5 headers for the web page */
+#AboutMessi h5, #AchievementsMessi h5, #MessiIntCareer h5 {
+	color: black;
+	font-weight: bold;
+	font-size: 21px;
+	text-decoration: underline;
+}
+/* styling the paragraphs and the list items for main content */
+#AboutMessi p, #AchievementsMessi li, #MessiIntCareer p {
+	color: white;
+	font-style: italic;
+	font-size: 15px;
+	font-family: "comic sans ms";
+}
+
+/* styling the image */
+#MessiIntCareer img {
+	padding: 7px;
+	border-radius: 30%;
+	float:left;
+}
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+/* gonna style the footer a little bit */
+.messifooter {
+	background-color: rgba(237,187,0, 0.3);
+	position: relative;
+}
+.rightfooter cite {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+
+}
+.rightfooter img {
+	position: relative;
+	left: 1250px;
+}
